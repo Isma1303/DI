@@ -1,0 +1,73 @@
+<main>
+  <h1>Contact</h1>
+
+  <% if (typeof query !== 'undefined' && query.success === 'true') { %>
+  <div class="alert alert-success">
+    ¡Mensaje enviado correctamente, Gracias por tu apoyo!
+  </div>
+  <% } %> <% if (typeof query !== 'undefined' && query.error === 'true') { %>
+  <div class="alert alert-error">
+    Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo.
+  </div>
+  <% } %>
+
+  <div class="contact-container">
+    <div class="contact-form">
+      <form action="/send-message" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h2>Connect With Me</h2>
+      <div class="email-container">
+        <h3>Email</h3>
+        <a href="mailto:liquezismael@gmail.com" class="email-link">
+          <i class="ph-bold ph-envelope"></i>
+          <span>liquezismael@gmail.com</span>
+        </a>
+      </div>
+
+      <div class="social-media">
+        <h3>Social Media</h3>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/ismael-liquez-9b7777297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="ph-bold ph-linkedin-logo"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/Isma1303"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="ph-bold ph-github-logo"></i>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://x.com/g3ma_gt?s=21"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="ph-bold ph-twitter-logo"></i>
+            <span>Twitter</span>
+          </a>
+          <a
+            href="https://www.instagram.com/ialiquez?igsh=MWNhOW1hd3J5cWpsdA%3D%3D&utm_source=qr"
+            target="_blank"
+            class="social-link"
+          >
+            <i class="ph-bold ph-instagram-logo"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

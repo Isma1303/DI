@@ -1,0 +1,64 @@
+<header>
+  <div class="logo">
+    <img src="/src/img/logo.png" alt="logo" />
+  </div>
+  <button class="menu-toggle" aria-label="Toggle menu">
+    <span class="hamburger-icon"></span>
+    <span class="hamburger-icon"></span>
+    <span class="hamburger-icon"></span>
+  </button>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li><a href="/history">My History</a></li>
+      <li><a href="/importance">Why Include More People?</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li class="nav-settings">
+        <button
+          id="settings-toggle"
+          class="settings-toggle"
+          aria-label="Settings"
+        >
+          ⚙️
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Settings Modal -->
+<div id="settings-modal" class="settings-modal">
+  <div class="settings-content">
+    <div class="settings-header">
+      <h3>Settings</h3>
+      <button class="close-settings">&times;</button>
+    </div>
+    <div class="settings-body">
+      <div class="settings-section">
+        <h4>Appearance</h4>
+        <div class="theme-options">
+          <button id="theme-light" class="theme-option" data-theme="light">
+            <div class="theme-preview light"></div>
+            <span>Light</span>
+          </button>
+          <button id="theme-dark" class="theme-option" data-theme="dark">
+            <div class="theme-preview dark"></div>
+            <span>Dark</span>
+          </button>
+        </div>
+      </div>
+      <div class="settings-section">
+        <h4>Language</h4>
+        <div class="language-options">
+          <button class="language-option" data-lang="en">
+            <span>English</span>
+          </button>
+          <button class="language-option" data-lang="es">
+            <span>Español</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
